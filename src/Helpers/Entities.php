@@ -18,8 +18,7 @@ final class Entities
      */
     public function __construct(
         private string $text
-    ) {
-    }
+    ) {}
 
     public static function format(string $text): self
     {
@@ -96,7 +95,7 @@ final class Entities
             'text_mention' => ['[%1$s](tg://user?id=%1$s)', '<a href="tg://user?id=%1$s">%1$s</a>'],
             'text_link' => ['[%s](%s)', '<a href="%2$s">%1$s</a>'],
             // underline doesn't have a markdown style
-            'underline' => ['%s', '<u>%s</u>']
+            'underline' => ['%s', '<u>%s</u>'],
         ];
     }
 }
